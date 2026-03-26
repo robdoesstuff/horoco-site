@@ -304,12 +304,12 @@ footer {
         font-size: 0.82rem;
     }
 
-    .first-section {
-        padding-top: 100px;
-    }
-
     .product, .about, .contact {
         padding: 60px 0;
+    }
+
+    .first-section {
+        padding-top: 80px;
     }
 
     .features {

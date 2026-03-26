@@ -1,0 +1,318 @@
+:root {
+    --brown-deep: #1E120A;
+    --brown-dark: #2C1A0E;
+    --brown-mid: #3D2B1E;
+    --brown-light: #5C4033;
+    --orange: #D4772C;
+    --orange-light: #E8943F;
+    --cream: #F5E6D3;
+    --cream-light: #FFF8F0;
+    --cream-dim: #C4AD97;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', -apple-system, sans-serif;
+    background-color: var(--brown-dark);
+    color: var(--cream);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    color: var(--cream-light);
+}
+
+/* ---- NAV ---- */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(30, 18, 10, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212, 119, 44, 0.15);
+}
+
+.nav-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    color: var(--cream-light);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: var(--cream-dim);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.brand {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+}
+
+.first-section {
+    padding-top: 120px;
+    border-top: none;
+}
+
+/* ---- SECTIONS ---- */
+
+.section-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--orange);
+    margin-bottom: 12px;
+}
+
+/* ---- PRODUCT ---- */
+
+.product {
+    padding: 80px 0;
+    border-top: 1px solid rgba(92, 64, 51, 0.4);
+}
+
+.product h2 {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+    color: var(--orange-light);
+}
+
+.product-tagline {
+    font-size: 1.1rem;
+    color: var(--cream-dim);
+    margin-bottom: 48px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.feature {
+    background: rgba(61, 43, 30, 0.5);
+    border: 1px solid rgba(92, 64, 51, 0.4);
+    border-radius: 12px;
+    padding: 28px 24px;
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.feature h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.feature p {
+    font-size: 0.92rem;
+    color: var(--cream-dim);
+    line-height: 1.7;
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 32px;
+    background: rgba(212, 119, 44, 0.08);
+    border: 1px solid rgba(212, 119, 44, 0.2);
+    border-radius: 12px;
+}
+
+.coming-soon span {
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    color: var(--orange);
+    margin-bottom: 8px;
+}
+
+.coming-soon p {
+    color: var(--cream-dim);
+    font-size: 0.95rem;
+}
+
+/* ---- ABOUT ---- */
+
+.about {
+    padding: 80px 0;
+    border-top: 1px solid rgba(92, 64, 51, 0.4);
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: var(--cream-dim);
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+/* ---- CONTACT ---- */
+
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    border-top: 1px solid rgba(92, 64, 51, 0.4);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.contact p {
+    color: var(--cream-dim);
+    margin-bottom: 24px;
+}
+
+.email-link {
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.4rem;
+    color: var(--orange);
+    text-decoration: none;
+    padding: 12px 32px;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.email-link:hover {
+    background: var(--orange);
+    color: var(--brown-deep);
+}
+
+/* ---- FOOTER ---- */
+
+footer {
+    border-top: 1px solid rgba(92, 64, 51, 0.4);
+    padding: 40px 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    color: var(--cream-dim);
+}
+
+.footer-logo-img {
+    height: 24px;
+    width: auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: var(--cream-dim);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--orange);
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    color: var(--brown-light);
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 600px) {
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+    .first-section {
+        padding-top: 100px;
+    }
+
+    .product, .about, .contact {
+        padding: 60px 0;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
